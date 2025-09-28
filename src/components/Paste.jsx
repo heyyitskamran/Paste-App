@@ -67,7 +67,7 @@ const Paste = () => {
                   <div className="w-[50%] flex flex-col space-y-3">
                     <p className="text-4xl font-semibold ">{paste?.title}</p>
                     <p className="text-sm font-normal line-clamp-3 max-w-[80%] text-[#707070]">
-                      {paste?.content}
+                      {paste?.value}
                     </p>
                   </div>
 
@@ -106,7 +106,7 @@ const Paste = () => {
                       <button
                         className="p-2 rounded-[0.2rem] bg-white border border-[#c7c7c7]  hover:bg-transparent group hover:border-green-500"
                         onClick={() => {
-                          navigator.clipboard.writeText(paste?.content);
+                          navigator.clipboard.writeText(paste?.value);
                           toast.success("Copied to Clipboard");
                         }}
                       >
