@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import React from 'react'
 import { Provider } from 'react-redux'
-import { store } from './redux-tool/Store.jsx'
+import { store } from './redux-tool/store.jsx'
 import { Toaster } from 'react-hot-toast'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
